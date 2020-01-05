@@ -13,7 +13,7 @@ require 'securerandom'
 
 #ここから４行基本設定
 options = Selenium::WebDriver::Chrome::Options.new
-options.add_argument('--headless')  #ここがポイント１
+# options.add_argument('--headless')  #ここがポイント１
 d = Selenium::WebDriver.for :chrome, options: options
 wait = Selenium::WebDriver::Wait.new(:timeout => 30)
 
